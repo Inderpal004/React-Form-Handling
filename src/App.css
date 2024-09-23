@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.app {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(54deg,#074697,#ee82ee);
+}
+
+.heading {
+    margin-bottom: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+form {
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    min-width: 300px;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+}
+
+input , select , option{
+    margin-top: 5px;
+    border: 1px solid #b0b0b0;
+    outline: none;
+    padding: 7px;
+    font-size: 14px;
+    color: #000;
+}
+
+.error {
+    margin-top: 3px;
+    color: #48ff00;
+    font-weight: 500;
+}
+
+button {
+    margin: 10px 0px;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    background: #ff3396;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background: #f884bc;
+}
+
+.watched-values,.submitted-values {
+    min-width: 280px;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
